@@ -1,0 +1,17 @@
+create table SignupDetails(fname varchar(20),lname varchar(20),email varchar(50),password varchar(20));
+
+create table SellBookDetails(email varchar(50),id varchar(100),booktype varchar(50),authorname varchar(30),bookname varchar(30),price varchar(10),quantity varchar(10),front varchar(100),back varchar(100),description varchar(1000));
+
+////create table VerifyBookDetails(email varchar(50),id varchar(100),verify varchar(20));
+
+create table DummyBookDetails(email varchar(50),id varchar(100),booktype varchar(50),authorname varchar(30),bookname varchar(30),price varchar(10),quantity varchar(10),front varchar(100),back varchar(100),description varchar(1000));
+
+create table SellBookError(email varchar(50),id varchar(100),booktype varchar(50),authorname varchar(30),bookname varchar(30),price varchar(10),quantity varchar(10),front varchar(100),back varchar(100),description varchar(1000),errordesc varchar(255));
+
+create table CartDetails(email varchar(50),id varchar(100),price varchar(10),quantity varchar(10));
+
+create table AddAddress(email varchar(50),fname varchar(50),mnumber varchar(10),fnumber varchar(100),area varchar(100),lmark varchar(100),cartid varchar(100));
+
+create table SoldDetails(email varchar(50),soldid varchar(200),quantitysold varchar(50),cartid varchar(100));
+
+create table ViewProfile(email varchar(50),front varchar(100));
